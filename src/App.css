@@ -1,38 +1,124 @@
 .App {
-  text-align: center;
-}
+    text-align: center;
+    background-color: black;
+  
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+  h2{
+    color: gold;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin:auto;
+    justify-content: space-evenly;
+    /* filter: drop-shadow(5px 5px 5px rgb(250, 250, 249)); */
+    
+  }
+  /* .cardText {
+    margin-top: -6px;
+    padding: 20px;
+    background-color: whitesmoke;
+    position: absolute;
+    opacity: 0;
+    width: 320px;
+    height: 455px;
+    overflow: auto;
+    border-radius:  .65rem;
+    transition: all 300ms ease-in-out;
+    text-align: left;
+    
+    
+  } */
+  .cardBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    border-bottom-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    border-radius: 3rem;
+  }
+  
+  .cardBox:hover .cardText {
+    opacity: 1;
+  }
+  
+  .cardImg {
+    max-height: 450px;
+    min-height: 450px;
+    border-radius:  .65rem;
+  }
+  
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
   }
-}
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .container {
+    background-color: transparent;
+  }
+  
+  .navBar {
+    background-color: black;
+    text-align: left;
+  }
+  
+  .card {
+    border-radius: 2rem;
+    padding-top: 1px;
+    background-color: gray;
+    padding-bottom: 20px;
+    width: 320px;
+    margin: 2rem 1rem;
+    
+    
+  }
+  
+  .reviewBtn {
+    height: 30px;
+    width: 200px;
+    margin-top: 20px;
+  }
+  
+  .card-title {
+    color:#282c34
+  }
+  
+  
+  
+  
